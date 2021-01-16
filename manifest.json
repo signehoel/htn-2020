@@ -8,7 +8,7 @@
         "matches":[
           "<all_urls>"
         ],
-        "js": ["content.js"],
+        "js": ["popup.js"],
         "css": [ "popup.css" ]
       }
     ],
