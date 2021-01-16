@@ -1,0 +1,29 @@
+{
+  "name": "newtonmath.js",
+  "version": "1.0.2",
+  "description": "JavaScript wrapper for the newton math API",
+  "main": "newtonmath.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benpryke/NewtonMath.js"
+  },
+  "scripts": {
+    "test": "jasmine",
+    "build": "babili newtonmath.js -o newtonmath-min.js -s"
+  },
+  "keywords": [
+    "newton",
+    "API",
+    "math",
+    "maths"
+  ],
+  "author": "Benjamin Pryke",
+  "license": "MIT",
+  "devDependencies": {
+    "babili": "^0.1.4",
+    "jasmine": "^2.6.0"
+  },
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
+}
