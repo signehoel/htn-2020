@@ -7,8 +7,17 @@ async function getapi(url) {
     
     // Storing data in form of JSON 
     var data = await response.json(); 
-    console.log(data); 
-    //show(data); 
+    var resultSpace = document.getElementById("results");
+    var result = data.result;
+    console.log(result);
+    resultSpace.innerHTML = result;
+} 
+async function printData() { 
+    
+    data = getapi(api_url);
+    console.log(data);
+    
+    
 } 
 
 getapi(api_url); 
