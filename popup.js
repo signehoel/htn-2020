@@ -21,8 +21,6 @@ async function printData() {
     
     data = getapi(api_url);
     console.log(data);
-    
-    
 } 
 
 getapi(api_url); 
