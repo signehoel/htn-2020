@@ -8,7 +8,8 @@
         "matches":[
           "<all_urls>"
         ],
-        "js": ["content.js"]
+        "js": ["content.js"],
+        "css": [ "popup.css" ]
       }
     ],
   "browser_action": {
@@ -25,6 +26,9 @@
         "48": "icon.png",
         "128": "icon.png"
       },
+    "web_accessible_resources": [
+        "popup.css"
+      ],
   "permissions": [
       "activeTab",
       "storage"
