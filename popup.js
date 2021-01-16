@@ -1,4 +1,7 @@
-const api_url = 'https://newton.now.sh/api/v2/derive/x^2';
+var operation = "factor";
+var expression = "(x^2 + 2x)";
+
+const api_url = 'https://newton.now.sh/api/v2/'+operation+'/'+expression;
 
 async function getapi(url) { 
     
