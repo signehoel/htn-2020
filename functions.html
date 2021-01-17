@@ -17,24 +17,21 @@
         <h1 class="display-6" style="text-align:center; margin-top: 20px;">Calculator</h1>
         <div class="d-grid gap-2 col-6 mx-auto" style = "margin-top: 20px;">
             <a href="popup.html" class="btn btn-light" role="button" data-bs-toggle="button">Home</a>
-            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                Simplify
-            </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <li><a class="dropdown-item" href="#">Simplify</a></li>
-                <li><a class="dropdown-item" href="#">Factor</a></li>
-                <li><a class="dropdown-item" href="#">Find 0's</a></li>
-                <li><a class="dropdown-item" href="#">Cosine</a></li>
-                <li><a class="dropdown-item" href="#">Sine</a></li>
-                <li><a class="dropdown-item" href="#">Tangent</a></li>
-                <li><a class="dropdown-item" href="#">Inverse Cosine</a></li>
-                <li><a class="dropdown-item" href="#">Inverse Sine</a></li>
-                <li><a class="dropdown-item" href="#">Inverse Tangent</a></li>
-                <li><a class="dropdown-item" href="#">Absolute Value</a></li>
-                <li><a class="dropdown-item" href="#">Logarithm</a></li>
-              </ul>
+              <select class="btn btn-light dropdown-toggle" name="operations" id="operations">
+                <option value="simplify">Simplify</option>
+                <option value="factor">Factor</option>
+                <option value="zeroes">Find 0s</option>
+                <option value="cos">Cosine</option>
+                <option value="sin">Sine</option>
+                <option value="tan">Tangent</option>
+                <option value="arccos">Inverse Cosine</option>
+                <option value="arcsin">Inverse Sine</option>
+                <option value="arctan">Inverse Tangent</option>
+                <option value="abs">Absolute Value</option>
+                <option value="log">Logarithm</option>
+              </select>
                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter expression">
-                <button type="submit" class="btn btn-secondary">Calculate</button>
+                <button type="submit" class="btn btn-secondary" id="submit">Calculate</button>
         </div>
   </div>
 

@@ -1,13 +1,18 @@
-var operation = "derive";
-var expression = "(x^2 + 2x)";
-var newExpression = expression.replace("+", "%2B");
+var expression;
+var newExpression; 
+var operation;
 
-const api_url = 'https://newton.now.sh/api/v2/'+operation+'/'+newExpression;
+console.log(expression);
 
-async function getapi(url) { 
-    
+var api_url = "";
+
+async function getapi() { 
+    expression = document.getElementById("formGroupExampleInput").value;
+    newExpression= expression.replace("+", "%2B");
+    operation = document.getElementById("operations").value;
+    api_url = 'https://newton.now.sh/api/v2/'+operation+'/'+newExpression;
     // Storing response 
-    const response = await fetch(url); 
+    const response = await fetch(api_url); 
     
     // Storing data in form of JSON 
     var data = await response.json(); 
@@ -15,5 +20,7 @@ async function getapi(url) {
     var result = data.result;
     console.log(result);
     resultSpace.innerHTML = result;
-} 
-getapi(api_url); 
+}
+
+var button = document.getElementById("submit");
+button.onclick = getapi;
