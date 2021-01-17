@@ -14,22 +14,26 @@
   </head>
   <body id="popup">
     <div class="container">
-        <h1 class="display-6" style="text-align:center; margin-top: 20px;">Calculator</h1>
-        <div class="d-grid gap-2 col-6 mx-auto" style = "margin-top: 20px;">
-            <a href="popup.html" class="btn btn-light" role="button" data-bs-toggle="button">Home</a>
-            <select class="btn btn-light dropdown-toggle" name="operations" id="operations">
-              <option value="derive">Derive</option>
-              <option value="integrate">Integrate</option>
+        <h1 class="display-7" style="text-align:center; margin-top: 20px;">Calculator</h1>
+        <div style = "margin-top: 20px;">
+            <a href="popup.html" class="btn btn-light" role="button" data-bs-toggle="button" style="text-align:center; width: 150px;">Home</a>
+          <div style = "padding-bottom: 15px; padding-top: 15px; ">
+            <select class="btn btn-light dropdown-toggle" name="operations" id="operations" style="text-align:center; width: 150px;">
+              <option value="derive" style="text-align:center;">Derive</option>
+              <option value="integrate" style="text-align:center;" >Integrate</option>
               <option value="tangent">Find Tangent</option>
               <option value="area">Area Under Curve</option>
             </select>
+          </div>
             <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter expression">
-            <button type="submit" class="btn btn-secondary" id="submit">Calculate</button>
+            <div style="padding-top: 15px;">            
+              <button type="submit" class="btn btn-secondary" id="submit" style="width: 150px;">Calculate</button>
+            </div>
             </div>        
   </div>
 
     <div style="text-align: center">
-      <h1 class="display-7" style="text-align:center; margin-top: 20px;">Results</h1>
+      <h1 class="display-6" style="text-align:center; margin-top: 20px;">Results</h1>
       <h3 id="results"></h3>
     </div>
     <script src="popup.js"></script>
