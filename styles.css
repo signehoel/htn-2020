@@ -3,6 +3,13 @@
     height: 400px;
 }
 
-#operations {
+#operations, .about{
   text-align: center;
+}
+
+.format {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }
