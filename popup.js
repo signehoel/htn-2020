@@ -3,13 +3,12 @@ var expression = "(x^2 + 2x)";
 var newExpression = expression.replace("+", "%2B");
 var index;
 
-const api_url = 'https://newton.now.sh/api/v2/'+operation+'/'+newExpression;
-
+const api_url = 'https://newton.now.sh/api/v2/derive/x^2';
 async function getapi(url) { 
     
     // Storing response 
     const response = await fetch(url); 
-    
+
     // Storing data in form of JSON 
     var data = await response.json(); 
     var resultSpace = document.getElementById("results");
@@ -18,9 +17,10 @@ async function getapi(url) {
     resultSpace.innerHTML = result;
 } 
 async function printData() { 
-    
+
     data = getapi(api_url);
     console.log(data);
+
 } 
 
-getapi(api_url); 
+getapi(api_url);  
