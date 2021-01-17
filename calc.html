@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -16,10 +15,24 @@
     <div class="container">
         <h1 class="display-6" style="text-align:center; margin-top: 20px;">Calculator</h1>
         <div class="d-grid gap-2 col-6 mx-auto" style = "margin-top: 20px;">
-            <a href="calc.html" class="btn btn-light" role="button" data-bs-toggle="button">Calculus</a>
-            <a href="functions.html" class="btn btn-light" role="button" data-bs-toggle="button">Functions</a>
+            <a href="popup.html" class="btn btn-light" role="button" data-bs-toggle="button">Home</a>
+              <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                Simplify
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Derive</a></li>
+                <li><a class="dropdown-item" href="#">Integrate</a></li>
+                <li><a class="dropdown-item" href="#">Find Tangent</a></li>
+                <li><a class="dropdown-item" href="#">Area Under Curve</a></li>
+              </ul>
         </div>
   </div>
+
+    <div style="text-align: center">
+      <h1 class="display-7" style="text-align:center; margin-top: 20px;">Results</h1>
+      <h3 id="results"></h3>
+    </div>
+    <script src="popup.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
