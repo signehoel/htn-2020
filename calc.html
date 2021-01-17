@@ -17,18 +17,15 @@
         <h1 class="display-6" style="text-align:center; margin-top: 20px;">Calculator</h1>
         <div class="d-grid gap-2 col-6 mx-auto" style = "margin-top: 20px;">
             <a href="popup.html" class="btn btn-light" role="button" data-bs-toggle="button">Home</a>
-              <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                Derive
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <li><a class="dropdown-item" href="#">Derive</a></li>
-                <li><a class="dropdown-item" href="#">Integrate</a></li>
-                <li><a class="dropdown-item" href="#">Find Tangent</a></li>
-                <li><a class="dropdown-item" href="#">Area Under Curve</a></li>
-              </ul>
-              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter expression">
-              <button type="submit" class="btn btn-secondary">Calculate</button>
-            </div>
+            <select class="btn btn-light dropdown-toggle" name="operations" id="operations">
+              <option value="derive">Derive</option>
+              <option value="integrate">Integrate</option>
+              <option value="tangent">Find Tangent</option>
+              <option value="area">Area Under Curve</option>
+            </select>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter expression">
+            <button type="submit" class="btn btn-secondary" id="submit">Calculate</button>
+            </div>        
   </div>
 
     <div style="text-align: center">
