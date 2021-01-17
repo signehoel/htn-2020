@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
-  "name": "Calculator",
-  "description": "Testing Plugin",
+  "name": "MathHacks",
+  "description": "A convenient and easy to use calculator!",
   "version": "1.0",
   "content_scripts":[
       {

@@ -18,8 +18,13 @@ async function getapi() {
     var data = await response.json(); 
     var resultSpace = document.getElementById("results");
     var result = data.result;
-    console.log(result);
-    resultSpace.innerHTML = result;
+    if (result == "undefined" || result == "NaN"){
+        resultSpace.innerHTML = "There are no results for this input. Check your formatting :)";
+    }
+    else {
+        resultSpace.innerHTML = result;
+    }
+    
 }
 
 var button = document.getElementById("submit");
