@@ -1,4 +1,4 @@
-# htn-2020
+# Math Hacks
 
 Math Hacks: Hack the North 2020 Project Submission 
 Authors: Lauren Yoshida, Signe Hoel, Hargun Bhalla 
